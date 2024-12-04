@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remover margem */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Centralizar submenu */
+    width: 200px; /* Ajuste da largura */
+    border-radius: 5px; /* Bordas suaves */
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 80%;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+h1 {
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+form input, form textarea, form button {
+    width: calc(100% - 20px); /* Ajuste da largura para margem */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Ajuste da margem direita */
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do menu do usuário */
+.menu-usuario {
+    position: absolute;
+    top: -80px;
+    right: -400px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-usuario a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu-usuario {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: #4CAF50; /* Fundo verde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 140px;
+    z-index: 1000;
+}
+
+.submenu-usuario li {
+    border-bottom: 1px solid #3e8e41; /* Linha divisória */
+}
+
+.submenu-usuario li:last-child {
+    border-bottom: none; /* Remove linha da última opção */
+}
+
+.submenu-usuario a {
+    display: block;
+    padding: 8px; /* Reduzindo o espaçamento */
+    font-size: 14px; /* Tamanho menor da fonte */
+    color: white; /* Letra branca */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Suaviza a transição de hover */
+}
+
+.submenu-usuario a:hover {
+    background-color: #333; /* Fundo escuro ao passar o mouse */
+    color: white; /* Garante que o texto continue branco */
+}
+
+.submenu-usuario a:focus {
+    outline: none; /* Remove a borda ao selecionar */
+}

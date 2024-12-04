@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Laboratório de Inovação</title>
+    <link rel="stylesheet" href="cadastrolab.css">
+</head>
+<body>
+    <header>
+        <h1>Mapa de Inovação - Sul Catarinense</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#startups">Startups</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-startups">Ver</a></li>
+                        <li><a href="#cadastro-startups">Cadastro</a></li>
+                        <li><a href="#mapeamento-startups">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#empresas">Empresas de Tecnologia</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-empresas">Ver</a></li>
+                        <li><a href="#cadastro-empresas">Cadastro</a></li>
+                        <li><a href="#mapeamento-empresas">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#laboratorios">Laboratórios de Inovação</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-laboratorios">Ver</a></li>
+                        <li><a href="#cadastro-laboratorios">Cadastro</a></li>
+                        <li><a href="#mapeamento-laboratorios">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#incubadoras">Incubadoras</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-incubadoras">Ver</a></li>
+                        <li><a href="#cadastro-incubadoras">Cadastro</a></li>
+                        <li><a href="#mapeamento-incubadoras">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coworkings">Coworkings</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-coworkings">Ver</a></li>
+                        <li><a href="#cadastro-coworkings">Cadastro</a></li>
+                        <li><a href="#mapeamento-coworkings">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#instituicoes">Instituições de Ensino</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-instituicoes">Ver</a></li>
+                        <li><a href="#cadastro-instituicoes">Cadastro</a></li>
+                        <li><a href="#mapeamento-instituicoes">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="registro-laboratorio">
+            <h2>Preencha os dados do seu Laboratório de Inovação</h2>
+            <form>
+                <label for="nome">Nome do Laboratório:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="responsavel">Responsável:</label>
+                <input type="text" id="responsavel" name="responsavel" required>
+
+                <label for="data-fundacao">Data de Fundação:</label>
+                <input type="date" id="data-fundacao" name="data-fundacao" required>
+
+                <label for="area-atuacao">Área de Atuação:</label>
+                <input type="text" id="area-atuacao" name="area-atuacao" required>
+
+                <label for="descricao">Descrição do Laboratório:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+
+                <label for="site">Site do Laboratório:</label>
+                <input type="url" id="site" name="site">
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mapa de Inovação - Sul Catarinense</p>
+    </footer>
+</body>
+</html>

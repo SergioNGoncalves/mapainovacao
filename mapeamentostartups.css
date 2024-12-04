@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    border-radius: 5px;
+    z-index: 1000; /* Adicionado para garantir que o submenu fique por cima */
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #333;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Ajustes para a barra de pesquisa */
+#search-section {
+    margin: 20px;
+    text-align: left;
+}
+
+#search-section form {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#search-section input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-section input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-section input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para as startups */
+#startups-lista {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#startups-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+#startups-lista li {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#startups-lista li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#startups-lista li strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#startups-lista li p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: relative; /* Alterado de fixed para relative */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Ajustes para o rodapé */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Ajuste no menu do usuário */
+.menu-usuario {
+    position: absolute;
+    top: -80px;
+    right: -400px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-usuario a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu-usuario {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: #4CAF50; /* Fundo verde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 140px;
+    z-index: 1000;
+}
+
+.submenu-usuario li {
+    border-bottom: 1px solid #3e8e41; /* Linha divisória */
+}
+
+.submenu-usuario li:last-child {
+    border-bottom: none; /* Remove linha da última opção */
+}
+
+.submenu-usuario a {
+    display: block;
+    padding: 8px; /* Reduzindo o espaçamento */
+    font-size: 14px; /* Tamanho menor da fonte */
+    color: white; /* Letra branca */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Suaviza a transição de hover */
+}
+
+.submenu-usuario a:hover {
+    background-color: #333; /* Fundo escuro ao passar o mouse */
+    color: white; /* Garante que o texto continue branco */
+}
+
+.submenu-usuario a:focus {
+    outline: none; /* Remove a borda ao selecionar */
+}

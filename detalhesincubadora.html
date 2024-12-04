@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incubadoras Cadastradas</title>
+    <link rel="stylesheet" href="detalhesincubadora.css">
+</head>
+<body>
+    <header>
+        <h1>Mapa de Inovação - Sul Catarinense</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#startups">Startups</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-startups">Ver</a></li>
+                        <li><a href="#cadastro-startups">Cadastro</a></li>
+                        <li><a href="#mapeamento-startups">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#empresas">Empresas de Tecnologia</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-empresas">Ver</a></li>
+                        <li><a href="#cadastro-empresas">Cadastro</a></li>
+                        <li><a href="#mapeamento-empresas">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#laboratorios">Laboratórios de Inovação</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-laboratorios">Ver</a></li>
+                        <li><a href="#cadastro-laboratorios">Cadastro</a></li>
+                        <li><a href="#mapeamento-laboratorios">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#incubadoras">Incubadoras</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-incubadoras">Ver</a></li>
+                        <li><a href="#cadastro-incubadoras">Cadastro</a></li>
+                        <li><a href="#mapeamento-incubadoras">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coworkings">Coworkings</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-coworkings">Ver</a></li>
+                        <li><a href="#cadastro-coworkings">Cadastro</a></li>
+                        <li><a href="#mapeamento-coworkings">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#instituicoes">Instituições de Ensino</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-instituicoes">Ver</a></li>
+                        <li><a href="#cadastro-instituicoes">Cadastro</a></li>
+                        <li><a href="#mapeamento-instituicoes">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="incubadoras-cadastradas">
+            <h2>Incubadoras Cadastradas</h2>
+            <input type="text" id="searchBar" placeholder="Pesquisar incubadoras..." onkeyup="searchIncubadoras()">
+            <div class="registro" data-name="InovaTech Incubadora">
+                <h3>Nome da Incubadora: InovaTech Incubadora</h3>
+                <p><strong>Fundadores:</strong> Carlos Silva, Ana Pereira</p>
+                <p><strong>Data de Fundação:</strong> 2015-06-15</p>
+                <p><strong>Área de Atuação:</strong> Tecnologia da Informação</p>
+                <p><strong>Descrição:</strong> Focada em apoiar startups de TI com infraestrutura e mentoria.</p>
+                <p><strong>Endereço:</strong> Rua das Inovações, 100</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.inovatech.com">www.inovatech.com</a></p>
+                <p><strong>Avaliação:</strong> 4.7</p>
+            </div>
+            <div class="registro" data-name="StartUp Hub">
+                <h3>Nome da Incubadora: StartUp Hub</h3>
+                <p><strong>Fundadores:</strong> João Souza, Maria Fernandes</p>
+                <p><strong>Data de Fundação:</strong> 2018-09-10</p>
+                <p><strong>Área de Atuação:</strong> Empreendedorismo</p>
+                <p><strong>Descrição:</strong> Incubadora que oferece suporte completo para novos empreendedores.</p>
+                <p><strong>Endereço:</strong> Avenida dos Empreendedores, 200</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.startuphub.com">www.startuphub.com</a></p>
+                <p><strong>Avaliação:</strong> 4.8</p>
+            </div>
+            <div class="registro" data-name="BioInova Incubadora">
+                <h3>Nome da Incubadora: BioInova Incubadora</h3>
+                <p><strong>Fundadores:</strong> Lucas Lima, Fernanda Costa</p>
+                <p><strong>Data de Fundação:</strong> 2016-03-22</p>
+                <p><strong>Área de Atuação:</strong> Biotecnologia</p>
+                <p><strong>Descrição:</strong> Apoia startups de biotecnologia com laboratórios e recursos especializados.</p>
+                <p><strong>Endereço:</strong> Rua da Biotecnologia, 300</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.bioinova.com">www.bioinova.com</a></p>
+                <p><strong>Avaliação:</strong> 4.6</p>
+            </div>
+            <div class="registro" data-name="AgroTech Incubadora">
+                <h3>Nome da Incubadora: AgroTech Incubadora</h3>
+                <p><strong>Fundadores:</strong> Pedro Santos, Carla Oliveira</p>
+                <p><strong>Data de Fundação:</strong> 2017-11-05</p>
+                <p><strong>Área de Atuação:</strong> Agronegócio</p>
+                <p><strong>Descrição:</strong> Especializada em startups do setor agro, oferecendo suporte técnico e de mercado.</p>
+                <p><strong>Endereço:</strong> Avenida do Agronegócio, 400</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.agrotech.com">www.agrotech.com</a></p>
+                <p><strong>Avaliação:</strong> 4.9</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mapa de Inovação - Sul Catarinense</p>
+    </footer>
+    <script>
+        function searchIncubadoras() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const registros = document.querySelectorAll('.registro');
+
+            registros.forEach(registro => {
+                const name = registro.getAttribute('data-name').toLowerCase();
+                if (name.includes(input)) {
+                    registro.style.display = '';
+                } else {
+                    registro.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

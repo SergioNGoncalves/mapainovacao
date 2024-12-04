@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    border-radius: 5px;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #333;
+}
+
+/* Estilo do Corpo do Site */
+main {
+    padding: 20px;
+}
+
+/* Quadrados de Explicação */
+.explicacao {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border: 2px solid #4CAF50;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.explicacao h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.explicacao p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    display: center;
+}
+
+body.scrolled footer p {
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .submenu {
+        width: 100%;
+    }
+
+    .explicacao {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .explicacao h2 {
+        font-size: 20px;
+    }
+
+    .explicacao p {
+        font-size: 14px;
+    }
+}
+
+.registro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.registro h3 {
+    color: #4CAF50;
+}
+
+.registro p {
+    margin: 0;
+}
+/* Estilo do menu do usuário */
+.menu-usuario {
+    position: absolute;
+    top: -80px;
+    right: -400px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-usuario a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu-usuario {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: #4CAF50; /* Fundo verde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 140px;
+    z-index: 1000;
+}
+
+.submenu-usuario li {
+    border-bottom: 1px solid #3e8e41; /* Linha divisória */
+}
+
+.submenu-usuario li:last-child {
+    border-bottom: none; /* Remove linha da última opção */
+}
+
+.submenu-usuario a {
+    display: block;
+    padding: 8px; /* Reduzindo o espaçamento */
+    font-size: 14px; /* Tamanho menor da fonte */
+    color: white; /* Letra branca */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Suaviza a transição de hover */
+}
+
+.submenu-usuario a:hover {
+    background-color: #333; /* Fundo escuro ao passar o mouse */
+    color: white; /* Garante que o texto continue branco */
+}
+
+.submenu-usuario a:focus {
+    outline: none; /* Remove a borda ao selecionar */
+}

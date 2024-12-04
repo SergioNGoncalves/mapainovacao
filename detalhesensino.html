@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituições de Ensino Cadastradas</title>
+    <link rel="stylesheet" href="detalhesensino.css">
+</head>
+<body>
+    <header>
+        <h1>Mapa de Inovação - Sul Catarinense</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#startups">Startups</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-startups">Ver</a></li>
+                        <li><a href="#cadastro-startups">Cadastro</a></li>
+                        <li><a href="#mapeamento-startups">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#empresas">Empresas de Tecnologia</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-empresas">Ver</a></li>
+                        <li><a href="#cadastro-empresas">Cadastro</a></li>
+                        <li><a href="#mapeamento-empresas">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#laboratorios">Laboratórios de Inovação</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-laboratorios">Ver</a></li>
+                        <li><a href="#cadastro-laboratorios">Cadastro</a></li>
+                        <li><a href="#mapeamento-laboratorios">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#incubadoras">Incubadoras</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-incubadoras">Ver</a></li>
+                        <li><a href="#cadastro-incubadoras">Cadastro</a></li>
+                        <li><a href="#mapeamento-incubadoras">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coworkings">Coworkings</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-coworkings">Ver</a></li>
+                        <li><a href="#cadastro-coworkings">Cadastro</a></li>
+                        <li><a href="#mapeamento-coworkings">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#instituicoes">Instituições de Ensino</a>
+                    <ul class="submenu">
+                        <li><a href="#ver-instituicoes">Ver</a></li>
+                        <li><a href="#cadastro-instituicoes">Cadastro</a></li>
+                        <li><a href="#mapeamento-instituicoes">Mapeamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="instituicoes-cadastradas">
+            <h2>Instituições de Ensino Cadastradas</h2>
+            <input type="text" id="searchBar" placeholder="Pesquisar instituições..." onkeyup="searchInstituicoes()">
+            <div class="registro" data-name="SENAC">
+                <h3>Nome da Instituição: SENAC</h3>
+                <p><strong>Fundadores:</strong> Sistema Fecomércio</p>
+                <p><strong>Data de Fundação:</strong> 1946-01-10</p>
+                <p><strong>Área de Atuação:</strong> Educação Profissional</p>
+                <p><strong>Descrição:</strong> Oferece cursos de capacitação profissional em diversas áreas.</p>
+                <p><strong>Endereço:</strong> Rua da Educação, 100</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.senac.com.br">www.senac.com.br</a></p>
+                <p><strong>Avaliação:</strong> 5.0</p>
+            </div>
+            <div class="registro" data-name="Universidade Federal de Santa Catarina">
+                <h3>Nome da Instituição: Universidade Federal de Santa Catarina</h3>
+                <p><strong>Fundadores:</strong> Governo Federal</p>
+                <p><strong>Data de Fundação:</strong> 1960-12-18</p>
+                <p><strong>Área de Atuação:</strong> Ensino Superior</p>
+                <p><strong>Descrição:</strong> Oferece cursos de graduação e pós-graduação em diversas áreas do conhecimento.</p>
+                <p><strong>Endereço:</strong> Campus Universitário, s/n</p>
+                <p><strong>Cidade:</strong> Florianópolis</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.ufsc.br">www.ufsc.br</a></p>
+                <p><strong>Avaliação:</strong> 4.9</p>
+            </div>
+            <div class="registro" data-name="Instituto Federal de Santa Catarina">
+                <h3>Nome da Instituição: Instituto Federal de Santa Catarina</h3>
+                <p><strong>Fundadores:</strong> Governo Federal</p>
+                <p><strong>Data de Fundação:</strong> 2008-12-29</p>
+                <p><strong>Área de Atuação:</strong> Educação Técnica e Tecnológica</p>
+                <p><strong>Descrição:</strong> Oferece cursos técnicos, tecnológicos e de formação continuada.</p>
+                <p><strong>Endereço:</strong> Rua 14 de Julho, 150</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.ifsc.edu.br">www.ifsc.edu.br</a></p>
+                <p><strong>Avaliação:</strong> 4.7</p>
+            </div>
+            <div class="registro" data-name="Universidade do Extremo Sul Catarinense">
+                <h3>Nome da Instituição: Universidade do Extremo Sul Catarinense</h3>
+                <p><strong>Fundadores:</strong> Fundação Educacional de Criciúma</p>
+                <p><strong>Data de Fundação:</strong> 1968-05-22</p>
+                <p><strong>Área de Atuação:</strong> Ensino Superior</p>
+                <p><strong>Descrição:</strong> Oferece cursos de graduação e pós-graduação, com foco em pesquisa e extensão.</p>
+                <p><strong>Endereço:</strong> Avenida Universitária, 1105</p>
+                <p><strong>Cidade:</strong> Criciúma</p>
+                <p><strong>Estado:</strong> SC</p>
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Site:</strong> <a href="http://www.unesc.net">www.unesc.net</a></p>
+                <p><strong>Avaliação:</strong> 4.6</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mapa de Inovação - Sul Catarinense</p>
+    </footer>
+    <script>
+        function searchInstituicoes() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const registros = document.querySelectorAll('.registro');
+
+            registros.forEach(registro => {
+                const name = registro.getAttribute('data-name').toLowerCase();
+                if (name.includes(input)) {
+                    registro.style.display = '';
+                } else {
+                    registro.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
